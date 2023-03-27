@@ -18,8 +18,8 @@ export const View = ({galleta}) => {
     </div>
 
     <div className='comillas'>
-    <i class='bx bxs-quote-single-right'></i>
-    <i class='bx bxs-quote-single-right'></i>
+    <i className='bx bxs-quote-single-right'></i>
+    <i className='bx bxs-quote-single-right'></i>
     </div>
      </div>
   )

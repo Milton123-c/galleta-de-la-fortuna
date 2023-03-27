@@ -129,6 +129,15 @@ body {
   text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.452);
 }
 
+.autor{
+  background-color: rgba(0, 255, 255, 0.514);
+  color: #fff;
+  padding: 0.5rem 2rem;
+  border-radius: 1rem;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.452);
+  border-bottom: 1px solid;
+}
+
 @media (max-width: 475px) {
     .App {
       width: 100%;
