@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.button__otro {
+  padding: 0.5rem 2rem;
+  background-color: rgba(123, 226, 226, 0.37);
+  border: 1px solid #fff;
+  border-radius: 0.5rem;
+  color: rgb(83, 83, 81);
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.button__otro:hover {
+  background-color: rgba(49, 206, 206, 0.603);
+}
+
+.img__background {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: -1;
+}
+
+.img__background img {
+  position: absolute; /* establecer posición absoluta para que la imagen sea posicionada en el contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.view {
+  position: relative;
+  width: 500px;
+  height: 250px;
+}
+
+.text__container {
+  position: absolute;
+  width: 450px;
+  height: 140px;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: rgba(0, 0, 0, 0.651);
+  text-shadow: 10px 5px 4px rgba(0, 0, 0, 0.452);
+}
+
+.svg__top {
+  position: absolute;
+  top: -34px;
+  width: 100%;
+
+  filter: drop-shadow(35px 22px 0px rgba(0, 0, 0, 0.75));
+}
+
+
+
+.svg__buttom {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  filter: drop-shadow(35px 22px 0px rgba(0, 0, 0, 0.75));
+ 
+}
+
+.svg__center {
+  position: absolute;
+  top: 77px;
+  width: 100%;
+  height: 80px;
+  background-color: #fff;
+}
+
+.svg__center::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: -35px;
+  width: 35px;
+  height: 62px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.753);
+}
+
+.comillas {
+  position: absolute;
+  font-size: 3rem;
+  color: rgba(0, 0, 0, 0.274);
+  bottom: 2.5rem;
+  right: 0;
+}
+
+.comillas i:nth-child(2) {
+  margin-left: -1rem;
+}
+
+.galleta {
+  color: #fff;
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.452);
+}
+
+@media (max-width: 475px) {
+    .App {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    .galleta {
+      text-align: center;
+    }
+    .view {
+      width: 99%;
+    }
+    .svg__center {
+      top: 45px;
+      height: 130px;
+    }
+  
+    .text__container {
+      width: 100%;
+      padding: 0 0.5rem;
+      overflow-y: scroll;
+      text-align: center;
+    }
+  
+    .svg__top {
+        top: -41px;
+      filter: drop-shadow(10px 22px 0px rgba(0, 0, 0, 0.75));
+    }
+  
+    .svg__buttom {
+      filter: drop-shadow(10px 15px 0px rgba(0, 0, 0, 0.75));
+    }
+  
+    .svg__center::before {
+    
+      /* top: 22px; */
+      right: -10px;
+      width: 10px;
+      height: 111px;
+      /* overflow: hidden; */
+      /* background-color: rgba(0, 0, 0, 0.753); */
+    }
+  }
+
+@media (max-width: 390px) {
+  .App {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .galleta {
+    text-align: center;
+  }
+  .view {
+    width: 99%;
+  }
+  .svg__center {
+    top: 45px;
+    height: 130px;
+  }
+
+  .text__container {
+    width: 100%;
+    padding: 0 0.5rem;
+    overflow-y: scroll;
+    text-align: center;
+  }
+
+  .svg__top {
+    filter: drop-shadow(10px 22px 0px rgba(0, 0, 0, 0.75));
+  }
+
+  .svg__buttom {
+    filter: drop-shadow(10px 15px 0px rgba(0, 0, 0, 0.75));
+  }
+
+  .svg__center::before {
+  
+    /* top: 22px; */
+    right: -9px;
+    width: 9px;
+    height: 120px;
+    /* overflow: hidden; */
+    /* background-color: rgba(0, 0, 0, 0.753); */
+  }
+}
+
+@media (max-width: 375px) {
+      
+      .svg__top{
+        top: -30px;
+      }
+      .svg__buttom{
+        bottom: 15px;
+      }
+      
+      .svg__center::before {
+  
+        top: 22px;
+        right: -10px;
+        width: 10px;
+        height: 107px;
+        /* overflow: hidden; */
+        /* background-color: rgba(0, 0, 0, 0.753); */
+      }
+}
+@media (max-width: 320px) {
+      
+    .svg__top{
+      top: -18px;
+    }
+    .svg__buttom{
+      bottom: 15px;
+    }
+    
+    .svg__center::before {
+
+      top: 22px;
+      right: -10px;
+      width: 10px;
+      height: 120px;
+      /* overflow: hidden; */
+      /* background-color: rgba(0, 0, 0, 0.753); */
+    }
+}
